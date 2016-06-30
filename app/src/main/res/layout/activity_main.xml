@@ -30,59 +30,72 @@
         android:layout_alignParentStart="true" />
 
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/inputNoun"
-        android:text="Enter a noun:"
+        android:hint="Enter a noun:"
         android:background="#afdfdbfe"
         android:textAlignment="center"
         android:padding="10dp"
-        android:layout_marginTop="33dp"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/inputVerb"
+        android:layout_toLeftOf="@+id/submitButton"
+        android:layout_toStartOf="@+id/submitButton" />
 
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/inputVerb"
-        android:text="Enter a verb:"
+        android:hint="Enter a verb:"
         android:background="#afdfdbfe"
         android:textAlignment="center"
         android:padding="10dp"
-        android:layout_below="@+id/inputNoun"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="29dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/inputAdjective"
+        android:layout_alignStart="@+id/inputAdjective"
+        android:layout_marginTop="40dp" />
 
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/inputAdjective"
-        android:text="Enter an adjective:"
+        android:hint="Enter an adjective:"
         android:background="#afdfdbfe"
         android:textAlignment="center"
         android:padding="10dp"
-        android:layout_marginTop="34dp"
-        android:layout_below="@+id/inputVerb"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/inputPlace"
+        android:layout_alignBottom="@+id/inputPlace"
+        android:layout_toRightOf="@+id/inputPlace"
+        android:layout_toEndOf="@+id/inputPlace" />
 
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/inputEmotion"
-        android:text="Enter an emotion:"
+        android:hint="Enter an emotion:"
         android:background="#afdfdbfe"
         android:textAlignment="center"
         android:padding="10dp"
-        android:layout_marginTop="33dp"
-        android:layout_below="@+id/inputAdjective"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_marginBottom="53dp"
+        android:layout_above="@+id/submitButton"
+        android:layout_alignLeft="@+id/inputVerb"
+        android:layout_alignStart="@+id/inputVerb" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputPlace"
+        android:hint="Enter a place:"
+        android:background="#afdfdbfe"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:layout_above="@+id/inputEmotion"
+        android:layout_alignLeft="@+id/inputNoun"
+        android:layout_alignStart="@+id/inputNoun" />
 
     <Button
         android:layout_width="wrap_content"
@@ -91,18 +104,5 @@
         android:id="@+id/submitButton"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/inputPlace"
-        android:text="Enter a place:"
-        android:background="#afdfdbfe"
-        android:textAlignment="center"
-        android:padding="10dp"
-        android:textStyle="bold"
-        android:layout_above="@+id/inputNoun"
-        android:layout_centerHorizontal="true" />
-
 
 </RelativeLayout>
