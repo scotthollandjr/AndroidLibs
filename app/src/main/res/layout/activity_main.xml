@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.guest.madlibs.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:background="@drawable/pineneedles"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Follow the prompts below to play a game of Mad Libs!"
+        android:layout_marginTop="30dp"
+        android:textSize="35sp"
+        android:textAlignment="center"
+        android:id="@+id/textView"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputNoun"
+        android:text="Enter a noun:"
+        android:background="#afdfdbfe"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputVerb"
+        android:text="Enter a verb:"
+        android:background="#afdfdbfe"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:layout_below="@+id/inputNoun"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputAdjective"
+        android:text="Enter an adjective:"
+        android:background="#afdfdbfe"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/inputVerb"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputEmotion"
+        android:text="Enter an emotion:"
+        android:background="#afdfdbfe"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/inputAdjective"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLAY!"
+        android:id="@+id/submitButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputPlace"
+        android:text="Enter a place:"
+        android:background="#afdfdbfe"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:layout_above="@+id/inputNoun"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
